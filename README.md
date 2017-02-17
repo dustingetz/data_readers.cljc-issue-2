@@ -1,3 +1,6 @@
+[data_readers.cljc](https://github.com/dustingetz/data_readers.cljc-issue-2/blob/master/src/data_readers.cljc)
+
+
     dustin@mbp foo (master *#)$ ./scripts/build
     java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.Named
       at clojure.core$namespace.invokeStatic(core.clj:1594)
