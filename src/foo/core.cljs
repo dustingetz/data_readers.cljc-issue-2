@@ -1,15 +1,10 @@
-(ns foo.core
-  (:require [clojure.browser.repl :as repl]))
+(ns foo.core)
 
-;; (defonce conn
-;;   (repl/connect "http://localhost:9000/repl"))
-
-(enable-console-print!)
-
-(println "Hello world!")
+(deftype Foo [i])
+(defn read-Foo [i] (->Foo i))
 
 (let [foo #cljs/tag 1]
   (assert (= foo 1)))
 
-(let [foo #app/Foo 1]
+(let [foo #foo/Foo 1]
   (assert (= (.-i foo) 1)))
